@@ -3,7 +3,7 @@ import asyncio
 from app.core.database import engine, Base
 from app.models.wallet import Wallet
 from app.models.ledger import WalletLedger
-from app.models.order import Order  # if you have it
+from app.models.order import Order  
 
 async def init():
     async with engine.begin() as conn:
